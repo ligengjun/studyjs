@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<!-- form 是表单域 -->
+		<form action="demo.php" method="GET">
+			<!-- input 输入表单元素 -->
+			<!-- text 文本框          同一组name名要相同    文本框看得到的       输入字段中的最大长度-->
+			用户名：<input type="text" name="username"   value="请输入用户名"     maxlength="6"/><br>
+			<!-- 加密 -->
+			<label for="text">密码：</label><input type="password" name="pwd"/><br>
+			<!-- radid 单选按钮 可以多选一 -->
+			<!-- name  是表单元素名字 这里性别单选按钮必须有相同的名字name 才能实现多选一-->
+			<!-- label标签 点击label标签内的文本时,浏览器会自动将焦点真钻转到对应的表单元素上 -->
+			性别：<input type="radio" name="sex" id="男"/><label for="man">男</label> <input type="radio" name="sex" id="女"/><label for="女"></label>女<br>
+			<!-- checkbox 多选按钮 -->
+			爱好：吃饭<input type="checkbox" name="hobby" value="吃饭"/> 睡觉<input type="checkbox" name="hobby" value="睡觉"/><br>
+			<!-- 单选按钮和复选框可以设置checked属性，当打开网页时会默认勾选这个按钮-->
+			<input type="checkbox" checked="checked"/>同意用户行为准则<br>
+			<!-- 点击提交按钮,可以把表单域form 里面的表单元素 里面的值 提交给后台服务器 -->
+			<input type="submit"/>
+			<input type="submit" value="免费注册"/>
+			<!-- 重置按钮可以还原表单元素初始的默认状态 -->
+			<input type="reset" value="重新填写"/><br>
+			<!-- 普通按钮 button 后期搭配js使用-->
+			<input type="button" value="获取短信信息"/><br>
+			<!-- 文件域 使用场景上传文件使用 -->
+			上传头像:<input type="file"/><br>
+			
+			<!-- select 下拉列表 -->
+			籍贯:
+			<select>
+				<option>山东</option>
+				<!-- selected 设置默认值 -->
+				<option selected="selected">广州</option>
+				<option>北京</option>
+			</select>
+			
+			<!-- textarea 用于定义多行 -->
+			今日反馈:
+			<!--   一行五十个字符数       有五行 一般在css实现-->
+			<textarea cols="50"        rows="5">
+				我知道这个反馈留言是textarea来做的
+			</textarea>
+		</form>
+	</body>
+</html>

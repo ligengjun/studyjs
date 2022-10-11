@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ol li {
+				color: pink;
+			}
+
+			ol li a {
+				color: red;
+			}
+
+			.nav li a {
+				color: yellow;
+			}
+
+			/* 子元素选择器 */
+			.nav1>a {
+				color: red;
+			}
+
+			/* 并集选择器 */
+			/* 约定的语法规范，我们并集选择器喜欢竖着写 */
+			/* 一定要注意，最后一个选择器 不需要加逗号 */
+			div,
+			p,
+			.pig li {
+				color: pink;
+			}
+			
+			/* 伪类选择器 */
+		</style>
+	</head>
+	<body>
+		<ol>
+			asd
+			<li>我是ol的孩子</li>
+			<li>我是ol的孩子</li>
+			<li>我是ol的孩子</li>
+			<li><a href="#">我是孙子</a></li>
+		</ol>
+		<ul>
+			<li>我是ul的孩子</li>
+			<li>我是ul的孩子</li>
+			<li>我是ul的孩子</li>
+			<li><a href="#">不会变颜色的</a></li>
+		</ul>
+		<ul class="nav">
+			<li>我是ul的孩子</li>
+			<li>我是ul的孩子</li>
+			<li>我是ul的孩子</li>
+			<li><a href="#">不会变颜色的</a></li>
+			<li><a href="#">不会变颜色的</a></li>
+			<li><a href="#">不会变颜色的</a></li>
+			<li><a href="#">不会变颜色的</a></li>
+		</ul>
+
+		<!-- 子元素选择器 -->
+		<div class="nav1">
+			<a href="#">我是儿子</a>
+			<p>
+				<a href="#">我是孙子</a>
+			</p>
+		</div>
+
+		<!-- 并集选择器 -->
+		<div>熊大</div>
+		<p>熊二</p>
+		<span>光头强</span>
+		<ul class="pig">
+			<li>小猪佩奇</li>
+			<li>猪爸爸</li>
+			<li>猪妈妈</li>
+		</ul>
+	</body>
+</html>

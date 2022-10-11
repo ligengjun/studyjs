@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a {
+				color: #333;
+			}
+			/* 伪类选择器 */
+			/* 链接伪类选择器 的四个顺序不能调换 */
+			/* 1.未访问的链接a:link  把没有点击过的（访问过的）链接选择出来 */
+			a:link {
+				color: #333;
+				text-decoration: none;
+			}
+			/* 2.a:visited 选择点击过的（访问过的）链接选择出来 */
+			a:visited {
+				color
+			}
+			/* 3.a:hover 选择鼠标经过的那个链接 */
+			a:hover {
+				color: skyblue;
+			}
+			/* 4.a:active 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+			a:active {
+				color: green;
+			}
+			
+			/* focus伪类选择器 ——> input 选择获得光标的表单 */
+			input:focus {
+				background-color: pink;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 链接伪类选择器 -->
+		<a href="#">小猪佩奇</a>
+		<a href="http://www.xxxxx.com">未知的网站</a>
+	
+		<!-- focus伪类选择器 -->
+		<input type="text">
+		<input type="text">
+		<input type="text">
+	</body>
+</html>
