@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 背景颜色 */
+        .a {
+            width: 200px;
+            height: 200px;
+            /* 没设置背景颜色的话默认就是transparent(透明的) */
+            /* background-color: transparent; */
+            background-color: red;
+        }
+
+        /* 背景图片 */
+        .b {
+            width: 300px;
+            height: 300px;
+            /* 不要漏掉url */
+            background-image: url(img/logo.png);
+            /* 默认情况下背景都是平铺 */
+            /* 1.不平铺 */
+            background-repeat: no-repeat;
+            /* 2.沿着x轴平铺 */
+            /* background-repeat: repeat-x; */
+            /* 3.沿着y轴平铺 */
+            /* background-repeat: repeat-y; */
+
+            /* 既可以设置背景颜色也可以设置背景图片 只不过背景图片会压住背景颜色 */
+            background-color: pink;
+            /* background-position: 方位名词; */
+            /* background-position: center top; */
+            /* 如果方位名词是center right 和 right center 没有区别 */
+            /* background-position: center right; */
+            /* background-position: right center; */
+
+            /* 背景位置-精确单位 */
+            /* 20px 50px x轴一定是 20 y轴一定是 50 */
+            background-position: 20px 50px;
+            /* 如果只指定一个数值 那该数值一定是x坐标,另一个默认垂直居中 */
+            /* background-position: 20px; */
+        }
+
+        .c {
+            width: 118px;
+            height: 40px;
+            background-color: pink;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(img/icon.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 1.5em;
+        }
+
+        /* 超大背景图片 */
+        body {
+            background-image: url(img/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+
+        .d {
+            width: 300px;
+            height: 300px;
+            background-image: url(img/logo.png);
+    
+            background-repeat: no-repeat;
+           
+            background-color: pink;
+
+            background-position: 50px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c">成长守护平台</div>
+    <div class="d"></div>
+
+</body>
+</html>
