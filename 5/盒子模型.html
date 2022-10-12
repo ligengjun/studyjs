@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 外边距 */
+        div {
+            width: 300px;
+            height: 200px;
+            /* border-width 边框的粗细  一般情况下都用 px */
+            /* border-width: 5px; */
+
+            /* border-style 边框的样式  solid 实线边框  dashed  虚线边框 dotted 点线边框*/
+            /* border-style: solid; */
+            /* border-style: dashed; */
+            /* border-style: dotted; */
+            
+            /* border-color 边框颜色 */
+            /* border-color: pink; */
+
+            /* 边框复合写法 */
+            /* border: 1px solid pink; */
+
+            border-top: 5px solid pink;
+            border-bottom: 10px dashed purple;
+        }
+        .a {
+            width: 200px;
+            height: 200px;
+            /* border-bottom: 5px solid blue;
+            border-right: 5px solid blue;
+            border-left: 5px solid blue; */
+            /* border 包括四条边 */
+            border: 5px solid blue;
+            border-top: 5px solid red;
+        }
+        
+        /* 内边距 */
+        .b {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px; */
+
+            /* 内边距复合写法（简写） */
+            /* padding 后面跟一个值 代表上下左右都有5像素内边距 */
+            /* padding: 5px; */
+            /* padding 后面跟两个值 代表上下内边距是5像素  左右内边距是10像素 */
+            /* padding: 5px 10px; */
+            /* padding 后面跟三个值 代表上内边距是5像素  左右内边距是10像素 下内边距是20像素 */
+            /* padding: 5px 10px 20px; */
+            /* padding 后面跟四个值 代表上是5像素  右是10像素 下是20像素 左是30像素  顺时针 */
+            padding: 5px 10px 20px 30px;
+        }
+
+        .c {
+            /* width: 200px;
+            height: 200px; */
+            width: 160px;
+            height: 160px;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        h1 {
+            /* 没有设置宽度和高度的话 padding不会撑开盒子的大小 */
+            height: 200px;
+            background-color: pink;
+            padding: 30px;
+        }
+        
+        .d {
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+        }
+        /* 孩子和父亲一样宽的话 孩子的padding都不会影响盒子 */
+        .d p {
+            /* 加了这一条后 孩子的宽度会超过父亲的宽度 */
+            /* width: 100%; */
+            padding: 30px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS盒子模型 包括:边框 -->
+    <div></div><br>
+    <div class="a"></div><br>
+    <div class="b">盒子内容是content盒子内容是content盒子内容是content盒子内容是content</div><br>
+    <div class="c">padding会影响盒子的实际大小padding会影响盒子的实际大小padding会影响盒子的实际大小padding会影响盒子的实际大小</div><br>
+    <h1></h1><br>
+    <div class="d">
+        <p></p>
+    </div>
+</body>
+</html>
